@@ -15,8 +15,18 @@ body {
   margin-bottom: 30px;
 }
 .logo {
-  width: 100px;
+  width: 50%;
+  max-width: 300px;
   height: auto;
+  transition: all 0.3s ease;
+}
+
+/* En celulares, el logo ocupa todo el ancho */
+@media (max-width: 600px) {
+  .logo {
+    width: 100%;
+    max-width: none;
+  }
 }
 
 /* Contenedor principal */
